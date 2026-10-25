@@ -25,12 +25,13 @@ public class OpenApiConfig {
         // Monta o documento com o bloco "info" preenchido.
         return new OpenAPI()
                 .info(new Info()
-                        // TROQUE: nome da API do grupo, em destaque no Swagger UI.
-                        .title("Projeto Final - NOME DO PROJETO")
+                        // Nome da API do grupo, em destaque no Swagger UI.
+                        .title("CidadeViva")
                         // Versão do contrato -- aqui, a etapa em que ele foi publicado.
                         .version("Etapa 1")
-                        // TROQUE: tema, integrantes e o que a API faz (aceita Markdown).
-                        .description("API REST do Projeto Final da disciplina de Backend (SATC). "
+                        // Tema e o que a API faz (aceita Markdown).
+                        .description("API REST do **CidadeViva** (tema: Cidades Inteligentes): o cidadão reporta problemas urbanos e o órgão competente acompanha e resolve. "
+                                + "Projeto Final da disciplina de Backend (SATC). "
                                 + "Todo corpo de requisição e de resposta é um **DTO** "
                                 + "e todo erro 400/404 sai no formato `ErroDTO`."));
     }
